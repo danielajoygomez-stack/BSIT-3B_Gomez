@@ -3,137 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity-2 Dashboard</title>
+    <title>Portfolio - BSIT-3B_Ramirez</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Roboto, sans-serif;
-        }
-
-        body {
-            background-color: #f0f4f8;
-            color: #1e293b;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        .dashboard-header {
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            color: white;
-            padding: 25px 30px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .dashboard-header h1 {
-            font-size: 1.8rem;
-            margin-bottom: 5px;
-        }
-
-        .dashboard-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .dashboard-card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: transform 0.2s ease;
-        }
-
-        .dashboard-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .dashboard-card h3 {
-            color: #475569;
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-
-        .card-value {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #2563eb;
-            margin-bottom: 8px;
-        }
-
-        .status-online {
-            color: #16a34a !important;
-        }
-
-        .card-desc {
-            font-size: 0.9rem;
-            color: #64748b;
-        }
-
-        footer {
-            margin-top: 40px;
-            text-align: center;
-            color: #94a3b8;
-            font-size: 0.85rem;
-        }
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.7; }
+        nav { background: #f5f5f5; padding: 15px; margin-bottom: 25px; border-radius: 6px; }
+        nav a { margin-right: 18px; text-decoration: none; color: #2c3e50; font-weight: bold; }
+        nav a:hover { color: #3498db; }
+        section { margin-bottom: 40px; padding: 20px; border-bottom: 1px solid #ddd; }
+        h1, h2 { color: #2c3e50; }
     </style>
 </head>
 <body>
 
-    <header class="dashboard-header">
-        <h1>Activity-2 Dashboard</h1>
-        <p id="current-time">Loading time...</p>
-    </header>
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#education">Educational Background</a>
+    </nav>
 
-    <div class="dashboard-grid">
-        
-        <div class="dashboard-card">
-            <h3>Active Projects</h3>
-            <div class="card-value">3 Branch</div>
-            <p class="card-desc"> 09/12/26 to 09/19/26 </p>
+    <section id="profile">
+        <h1>Profile</h1>
+        <div class="profile-wrapper">
+        <!-- Header with Photo & Contact -->
+        <header class="profile-header">
+            <div class="header-info">
+                <h1>Daniela joy Gomez</h1>
+                <p class="tagline">BSIT Student | Aspiring Developer | Tech Enthusiast</p>
+                <div class="contact-details">
+                    <p>📍 Zone 4A, Brgy. Rizal Dulag Leyte</p>
+                    <p>📧 <a href="mailto:daniela.gomez@gmail.com">daniela.gomez@gmail.com</a></p>
+                    <p>📞 09671327724</p>
+                </div>
+            </div>
+            <div class="profile-picture-container">
+                <img 
+                    src="c:\Users\Daniela Joy Gomez\Downloads\8533ad1e-69c9-47a5-b98f-7e0bd1a1d2aa.jpg" 
+                    alt="Daniela joy Gomez" 
+                    class="profile-photo"
+                >
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="profile-body">
+            <!-- Personal Information -->
+            <section class="section">
+                <h2 class="section-title">Personal Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Date of Birth</span>
+                        <span class="info-value">July 4 2004</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Place of Birth</span>
+                        <span class="info-value">Sungi Dulag Leyte</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Religion</span>
+                        <span class="info-value">Roman Catholic</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Languages Spoken</span>
+                        <span class="info-value">Waray-waray, Tagalog, English</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Gender</span>
+                        <span class="info-value">Female</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Height / Weight</span>
+                        <span class="info-value">145 cm / 40 kg</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Citizenship</span>
+                        <span class="info-value">Filipino</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Civil Status</span>
+                        <span class="info-value">Single</span>
+                    </div>
+                    
+                    <div class="divider-row"></div>
+                    
+                    <div class="info-item">
+                        <span class="info-label">Father's Name</span>
+                        <span class="info-value">Melvin R. Tiston</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Mother's Name</span>
+                        <span class="info-value">Donna M. Gomez</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    </section>
+
+    <section id="education">
+        <h2>Educational Background</h2>
+        <div class="container">
+        <!-- Header Section -->
+        <div class="header-bar">
+            <h1>Educational Background</h1>
+            <p>Bachelor of Science in Information Technology Student</p>
         </div>
 
-        
-        <div class="dashboard-card">
-            <h3>Tasks Completed</h3>
-            <div class="card-value">DATE: 09/18/26</div>
-            <p class="card-desc">This week</p>
-        </div>
+        <!-- Main Content -->
+        <div class="content">
+            <table>
+                <tr>
+                    <td class="level">Primary Level</td>
+                    <td class="details">
+                        <div class="school-name">Rizal Elementaey school</div>
+                        <div class="address">Rizal Dulag Leyte</div>
+                    </td>
+                    <td class="year">2017–2018</td>
+                </tr>
 
-        
-        <div class="dashboard-card">
-            <h3>System Status</h3>
-            <div class="card-value status-online">Online</div>
-            <p class="card-desc">All services running</p>
+                <tr>
+                    <td class="level">Junior High</td>
+                    <td class="details">
+                        <div class="school-name">Jose Rizal National High School</div>
+                        <div class="address">Rizal, Dulag , Leyte</div>
+                    </td>
+                    <td class="year">2018–2019</td>
+                </tr>
+
+                <tr>
+                    <td class="level">Senior High</td>
+                    <td class="details">
+                        <div class="school-name">Jose Rizal National high school</div>
+                        <div class="program">TVL</div>
+                        <div class="address">Rizal Dulag Leyte </div>
+                    </td>
+                    <td class="year">2023–2024</td>
+                </tr>
+
+                <tr>
+                    <td class="level">Tertiary Level</td>
+                    <td class="details">
+                        <div class="school-name">Eastern Visayas State University – Dulag Campus</div>
+                        <div class="program">Bachelor of Science in Information Technology</div>
+                        <div class="address">Dulag, Leyte</div>
+                        <span class="tertiary-badge">Currently Enrolled</span>
+                    </td>
+                    <td class="year">Present</td>
+                </tr>
+            </table>
         </div>
     </div>
-
-    <footer>
-        Dashboard GITBASH on <span id="today-date"></span>
-    </footer>
-
-    <script>
-        function updateTime() {
-            const now = new Date();
-            document.getElementById('current-time').textContent = 
-                now.toLocaleString('en-US', {
-                    weekday: 'long',
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    second: '2-digit'
-                });
-        }
-        updateTime();
-        setInterval(updateTime, 1000);
-
-        document.getElementById('today-date').textContent = new Date().toLocaleDateString();
-    </script>
+</body>
+    </section>
 
 </body>
 </html>
